@@ -1,0 +1,256 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;500;600;700;800;900&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+}
+:root{
+  --main-color: #7857fe;
+  --color-1: #e91e63; 
+  --color-2: #f5ae10; 
+  --color-3: #09d69c; 
+  --bg-dark: #0b1329;
+  --main-to-dark-color: var(--main-color);
+  --dark-to-main-color: var(--bg-dark);
+  --shadow-black-100: 0 5px 15px rgba(0,0,0,0.1);
+  --shadow-black-300: 0 5px 15px rgba(0,0,0,0.3);
+  --black-900: #000000;
+  --black-400: #555555;
+  --black-100: #f7f7f7;
+  --black-000: #ffffff;
+  --black-alpa-100: rgba(0,0,0,0.05);
+  --tran: all 0.3s linear;
+
+}
+ body{
+    font-family: 'Poppins', sans-serif;
+}
+a{
+    display: block;
+}
+.d-flex{
+    display: flex;
+}
+
+ul li{
+    list-style: none;
+}
+.align-items-center{
+    align-items: center;
+}
+.text-center{
+    text-align: center;
+}
+.justyify-content-between{
+    justify-content: space-between;
+}
+.m_left{
+  margin-left: 30px;
+}
+.m_tp{
+    margin-top: 20px;
+}
+
+.mt-8{
+    margin-top: 8px;
+}
+.mt-4{
+    margin-top: 40px;
+}
+.text_center{
+    text-align: center;
+}
+.pt-12{
+    padding-right: 12PX;
+}
+
+h4{
+  color: rgb(255, 255, 255);
+}
+/* button */
+
+/* header area start */
+header{
+  padding-top: 1rem;
+}
+.title34{
+  background-color:rgba(0, 0, 0 , 0.5);
+  padding: 10px ;
+}
+.full_body{
+
+  border: 1px solid black;
+  border-radius: 6px;
+}
+.icons, .icons2{
+  font-size: 50px;
+}
+.icons{
+  border-bottom: 1px solid black;
+  color: blue;
+}
+.text34{
+  padding: 40px;
+}
+.text1{
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+  
+  border-bottom: 1px solid black;
+}
+.text1 h4{
+  color: black;
+}
+.text1 span{
+  font-weight: bolder;
+  color: #1abc9c;
+}
+.text2 span{
+  font-weight: bolder;
+  color: #1abc9c;
+
+}
+.icons2 span{
+  font-size: 23px;
+
+}
+.text2{
+  border-bottom: 1px solid black;
+  padding: 30px;
+}
+.text3{
+  padding: 30px;
+  background-color: #f2f2f2;
+  border-radius: 6px;
+
+}
+.logo img{
+  width: 160px;
+  height: 100px;
+}
+.privacy{
+  float: right;
+}
+.privacy h5{
+  font-size: 19px;
+  text-decoration: underline;
+}
+/* button */
+.btn-1{
+  text-transform: uppercase;
+text-decoration: none;
+font-size: 18px;
+letter-spacing: 1px;
+color: 	#FFF;
+padding: 14px 81px;
+  background-color: blue;
+
+position: 	relative;
+z-index: 1;
+transition: var(--tran);
+overflow: hidden;
+  
+  
+}
+
+.btn-1::before{
+  content: '';
+position: absolute;
+top: 	0;
+left: 	0;
+background-color: #1abc9c;
+width: 	100%;
+  border: .1rem solid #1abc9c;
+height: 100%;
+transform: translateX(-100%);
+transition: var(--tran);
+}
+.btn-1:hover:before{
+  transform: translateX(0);
+z-index: 	-1;
+}
+.btn-1:hover{
+  color: #1abc9c;
+ 
+}
+.btn-1:focus{
+  box-shadow: var(--shadow-black-300);
+}
+.btn-1:hover{
+  color: #ffffff;
+  background: #926ef8;
+  transition: color 0.4s linear;
+  
+}
+@keyframes spin_01{
+  0%{
+    transform: rotate(0deg);  
+  }
+  100%{
+      transform: rotate(360deg);
+  }
+}
+@keyframes bounceTop_01{
+  0%,100%{
+     transform: translateY(-30px); 
+  }
+  50%{
+    transform: translateY(0px);  
+  }
+}
+@keyframes pulse_01{
+  0%{
+    transform: scale(0.94);
+    box-shadow: 0 0 0 0 rgba(255, 255, 255, 0.7);
+  }
+  70%{
+      transform: scale(1);
+      box-shadow: 0 0 0 12px rgba(255, 255, 255,0);
+  }
+  100%{
+      transform: scale(0.94);
+      box-shadow: 0 0 0 0 rgba(255, 255, 255, 0);
+  }
+}
+.effect-wrap .effect{
+  position: absolute;
+  z-index: -1;
+}
+.effect-wrap .effect-1{
+  left: 20%;
+  top: 20%;
+  font-size: 20px;
+  color: #1abc9c;
+  animation: spin_01 5s linear infinite;
+}
+.effect-wrap .effect-2{
+  right: 5%;
+  top: 10%;
+  font-size: 25px;
+  color: rgba(255, 255, 255, 0.5);
+  animation: spin_01 7s linear infinite;
+}
+.effect-wrap .effect-3{
+  left: 5%;
+  bottom: 30%;
+  font-size: 25px;
+  color: blue;
+  animation: bounceTop_01 3s linear infinite;
+}
+.effect-wrap .effect-4 {
+  left: 84%;
+  top: 23%;
+  font-size: 20px;
+  color: var(--bg-dark);
+  animation: spin_01 5s linear infinite;
+}
+
+.effect-wrap .effect-5 {
+  right: 35%;
+  top: 87%;
+  font-size: 25px;
+  color: var(--black-900);
+  animation: spin_01 7s linear infinite;
+}
